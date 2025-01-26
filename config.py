@@ -20,7 +20,7 @@ PORT = os.environ.get("PORT", "8585")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nikhil7858978052:r538PqLoSM9f49YM@cluster0.qi5qy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "")
+DB_NAME = os.environ.get("DATABASE_NAME", "nikhil7858978052")
 
 # Shortner (token system)
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
