@@ -31,8 +31,7 @@ VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400))  # Add time in secon
 IS_VERIFY = os.environ.get("IS_VERIFY", "False").lower() == "true"
 
 # Force sub channel id, if you want to enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002336755468"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002301125729"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL ", "-1002336755468"))
 
 # TG bot workers
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
