@@ -3,35 +3,35 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7660745065:AAHV6ddYirKDh8psT9oumuilOalSphLg6QE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7917716305:AAE966nwYKi9TAEMk5ZT0cSoKPa40fV67Rw")
 
 # Your API ID & API HASH from my.telegram.org [https://youtu.be/gZQJ-yTMkEo?si=H4NlUUgjsIc5btzH]
-APP_ID = int(os.environ.get("APP_ID", "20511201"))
-API_HASH = os.environ.get("API_HASH", "fb98de0adecf8af702ef9fa900df608f")
+APP_ID = int(os.environ.get("APP_ID", "28968125"))
+API_HASH = os.environ.get("API_HASH", "78a3b1d0b43364aba260c4ec0b2f229b")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001954599807"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001896877147"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "8189717881"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6444198928"))
 
 # Port
 PORT = os.environ.get("PORT", "8585")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nikhil7858978052:r538PqLoSM9f49YM@cluster0.qi5qy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "nikhil7858978052")
+DB_NAME = os.environ.get("DATABASE_NAME", "")
 
 # Shortner (token system)
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "27da09fa9a16def76a477cf214cc84981c34da90")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400))  # Add time in seconds
 
 # Fixed IS_VERIFY variable
 IS_VERIFY = os.environ.get("IS_VERIFY", "False").lower() == "true"
 
 # Force sub channel id, if you want to enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002336755468,-1002301125729"))
 
 # TG bot workers
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -64,7 +64,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly, I'm only a File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6695586027)
+ADMINS.append(6444198928)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
